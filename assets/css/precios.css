@@ -1,0 +1,39 @@
+/* precios.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Fondo claro */
+}
+
+/* Puedes añadir más estilos personalizados aquí si es necesario */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Fondo claro */
+}
+
+/* ... tus otros estilos ... */
+
+/* Estilos para los mensajes de alerta del formulario */
+.alert-msg {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: none; /* Oculto por defecto */
+}
+
+.alert-msg.success {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Texto verde oscuro */
+    border: 1px solid #c3e6cb;
+    display: block; /* Mostrar al añadir clase */
+}
+
+.alert-msg.error {
+    background-color: #f8d7da; /* Rojo claro */
+    color: #721c24; /* Texto rojo oscuro */
+    border: 1px solid #f5c6cb;
+    display: block; /* Mostrar al añadir clase */
+}

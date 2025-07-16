@@ -1,0 +1,33 @@
+
+/* Estilos específicos para el widget flotante */
+#floating-widget {
+    /* Posicionamiento fijo en la parte inferior derecha */
+    position: fixed;
+    right: 30px; /* 50px del borde derecho */
+    bottom: 150px; /* 200px del borde inferior (100px más arriba que antes) */
+    
+    /* Tamaño del contenedor: 300px de ancho x 500px de alto */
+    width: 300px;
+    height: 500px; /* Asegúrate de que 'px' esté presente aquí */
+    
+    /* Apariencia del widget */
+    background-color: transparent; /* Fondo transparente para la imagen con canal alfa */
+    opacity: 1; /* Opacidad inicial completa */
+    transition: opacity 0.3s ease-out; /* Transición suave para el desvanecimiento */
+    
+    /* Para el redondeo de esquinas y centrado de la imagen */
+    border-radius: 0.75rem; /* Aplica el redondeo al contenedor */
+    overflow: hidden; /* ¡Crucial! Recorta el contenido que se salga de los bordes redondeados */
+    display: flex; /* Habilita Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para la imagen dentro del widget */
+#floating-widget img {
+    width: 100%;
+    height: 100%;
+    /* ¡Asegúrate de que !important esté justo antes del punto y coma! */
+    object-fit: cover; 
+    border-radius: 0.75rem;
+}
