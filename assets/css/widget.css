@@ -14,7 +14,8 @@
     background-color: transparent; /* Fondo transparente para la imagen con canal alfa */
     opacity: 1; /* Opacidad inicial completa */
     transition: opacity 0.3s ease-out; /* Transición suave para el desvanecimiento */
-    
+    z-index: 1000;
+
     /* Para el redondeo de esquinas y centrado de la imagen */
     border-radius: 0.75rem; /* Aplica el redondeo al contenedor */
     overflow: hidden; /* ¡Crucial! Recorta el contenido que se salga de los bordes redondeados */
@@ -30,4 +31,13 @@
     /* ¡Asegúrate de que !important esté justo antes del punto y coma! */
     object-fit: cover; 
     border-radius: 0.75rem;
+}
+
+/* Contenedor del widget de ElevenLabs - ¡Siempre encima! */
+#elevenlabs-widget-container {
+    position: fixed; /* O 'absolute' si está dentro de un contenedor posicionado */
+    top: 20px; /* Ajusta la posición según necesites */
+    right: 20px; /* Ajusta la posición según necesites */
+    z-index: 9999; /* Un número muy alto para asegurar que esté encima */
+    /* Asegúrate de que este contenedor tenga un ancho y alto si el widget no lo define */
 }
